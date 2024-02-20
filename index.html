@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-4fc1cf2f.css">
   </head>
   <body>
     <header>
       <section>
-        <h1>Hello friends</h1>
+        <h1 class="main-title">Hello friends !</h1>
+        <p class="subtitle">
+          It's my page "<span class="first">Creme -</span>
+          <span class="second">brulee</span> " with my projects
+        </p>
       </section>
     </header>
 
@@ -20,11 +23,22 @@
   <nav class="nav">
     <ul class="nav-list">
       <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
+        <a href="../1_film_library.html" class="nav-link">Films library</a>
+      </li>
+      <li class="nav-item">
+        <a href="../2_weather_forecast.html" class="nav-link"
+          >Weather forecast</a
+        >
       </li>
 
       <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
+        <a href="../page-3.html" class="nav-link">Page 3</a>
+      </li>
+      <li class="nav-item">
+        <a href="../page-4.html" class="nav-link">Page 4</a>
+      </li>
+      <li class="nav-item">
+        <a href="../page-5.html" class="nav-link">Page 5</a>
       </li>
     </ul>
   </nav>
@@ -80,6 +94,8 @@
 </section> -->
 
 
-    
+    <!-- <script type="module" src="./main.js"></script> -->
+    <script src="./js/film_library.js"></script>
+    <script src="./js/weather_forecast.js"></script>
   </body>
 </html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 2</title>
+    
+    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-4fc1cf2f.css">
+  </head>
+  <body>
+    <section>
+      <a href="./index.html">Go to home</a>
+      <h1>Welcome!</h1>
+    </section>
+    <h2 class="weather-title">Weather forecast</h2>
+    <form class="js-search-form search-form">
+      <label for="city">Введіть назву міста</label>
+      <input type="text" name="city" class="search-input" required />
+
+      <label for="days">Виберіть кільксть днів</label>
+      <select name="days" class="days-select">
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="7">7</option>
+        <option value="9">9</option>
+        <option value="11">11</option>
+      </select>
+      <button class="search-button">Пошук</button>
+    </form>
+
+    <ul class="js-list weather-cards"></ul>
+  </body>
+</html>
