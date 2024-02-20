@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section>
+      <a href="./index.html">Go to home</a>
+      <h1>Welcome!</h1>
+    </section>
+    <h1 class="titleMovieLibrary">Films library</h1>
+    <!-- modal window -->
+    <div class="modalBackground">
+      <div class="modalActive">
+        <div class="modalClose modClose">
+          <img src="modalCross.svg" />
+        </div>
+        <div class="modalWindow"></div>
+      </div>
+    </div>
+    <ul class="js-movie-list movie-list"></ul>
+    <!-- Load more -->
+    <div class="button-container">
+      <button class="js-load-more load-more-hidden">Load more</button>
+    </div>
+
+    <!-- Infinity scroll -->
+    <div class="js-guard"></div>
+    <script src="./js/film_library.js"></script>
+  </body>
+</html>
