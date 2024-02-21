@@ -18,7 +18,7 @@ function handlerForecast(evt) {
 function serviceWeather(city, days) {
   const BASE_URL = 'http://api.weatherapi.com/v1';
   const API_KEY = '61069fb8abf74210b7d232148231510';
-
+  // +++++++++++++
   //   return fetch(`${BASE_URL}/forecast.json?key=${API_KEY}&q=${city}&days=${days}&lang=uk`).then
   // ((resp) => {
   // if (!resp.ok) {
@@ -26,7 +26,7 @@ function serviceWeather(city, days) {
   // }
   // return resp.json();
   //   });
-
+  // +++++++++++++++++++
   // або іншій варіант закоментованої частини
 
   const params = new URLSearchParams({

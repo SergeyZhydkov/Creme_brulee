@@ -119,6 +119,10 @@ function serviceMovie(page = 1) {
 }
 
 function createMarkup(arr) {
+  if (!Array.isArray(arr)) {
+    console.error('Input is not an array');
+    return '';
+  }
   return arr
     .map(
       ({ poster_path, original_title, release_date, vote_average }) => `
@@ -166,17 +170,17 @@ function handlerScroll() {
 }
 
 // modal
-const refs = {
-  backgroundModal: document.querySelector('.modalBackground'),
-  closeMod: document.querySelector('.modClose'),
-  modalContent: document.querySelector('.modalWindow'),
-};
-function closeModal(e) {
-  // if (e.target === refs.closeMod) console.log(e.target);
-  refs.backgroundModal.style.display = 'none';
-}
-refs.closeMod.addEventListener('click', closeModal);
-// refs.backgroundModal.addEventListener("click", closeModal);
-const content = createMarkup(arr);
-console.log(content);
-refs.modalContent.innerHTML(content);
+// const refs = {
+//   backgroundModal: document.querySelector('.modalBackground'),
+//   closeMod: document.querySelector('.modClose'),
+//   modalContent: document.querySelector('.modalWindow'),
+// };
+// function closeModal(e) {
+
+//   refs.backgroundModal.style.display = 'none';
+// }
+// refs.closeMod.addEventListener('click', closeModal);
+
+// const content = createMarkup();
+// console.log(content);
+// refs.modalContent.innerHTML(content);
